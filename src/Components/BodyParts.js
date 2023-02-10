@@ -46,10 +46,9 @@ function BodyParts() {
         ))}
       </div> */}
 
-      <div className="flex flex-col">
-        <h1 className="justify-start text-red-500 m-10 font-bold text-6xl ">
-          EXPLORE CATEGORIES
-        </h1>
+<div className="flex flex-row justify-center mt-8 ">
+        <h1 className=" text-black md:m-10 mx-2 font-bold lg:text-6xl md:text-4xl sm:text-2xl text-xl ">EXPLORE </h1>
+        <h1 className="md:mx-2  text-red-500 mx-2 md:m-10 font-bold lg:text-6xl md:text-4xl sm:text-2xl text-xl "> CATEGORIES </h1>
       </div>
       {/* <div className=" flex flex-wrap lg:m-8 md:m-4 sm:m-2 h-24 w-full"> */}
 
@@ -57,11 +56,11 @@ function BodyParts() {
 
       {data.map((data) => (
 
-    <div className="box  p-4 m-4 hover:bg-slate-200  transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-slate-200 duration-400" onClick={()=>handleCard(data.name)}>
+    <div className="box shadow-2xl p-4 m-4 hover:bg-slate-200  transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-slate-200 duration-400" onClick={()=>handleCard(data.name)}>
             <img className="h-96 w-96 " src={data.image} />
           
             {/* <h2 class="absolute text-3xl text-amber-400 bottom-4 left-1/2 -translate-x-1/2">Bottom Center</h2> */}
-            <h3 className=" text-4xl text-black justify-center">{data.name}</h3>
+            <h3 className=" text-4xl text-black text-center">{data.name}</h3>
             {/* <h3 class="absolute text-2xl text-green-300 bottom-5 right-5">Bottom Right</h3> */}
         </div>
 
@@ -70,15 +69,13 @@ function BodyParts() {
 
       </div>
 
-      {/* <div className="flex flex-row flex-wrap mx-24 bg-black">
+          <div className="w-screen md:h-96 lg:h-[500px] bg-black">
 
-        {data.map((data) => {
-          <div className="flex-col">
-            <img className="h-96 w-96" src={data.image} />
-            <h2>{data.name}</h2>
-          </div>;
-        })}
-      </div> */}
+              <div className="w-96 h-96 border bg-white align-center">
+
+              </div>
+          </div>
+    
     </div>
   );
 }

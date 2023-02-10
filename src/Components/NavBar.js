@@ -20,10 +20,16 @@ function NavBar() {
     navigate('/exercise')
 
   }
+  const handleLogin=()=>
+  {
+    navigate('/login')
+
+  }
+  
   return (
     <div>
 
-    <Stack direction="row" className=' flex flex-row pt-4 pb-12'>
+    <Stack direction="row" className=' flex flex-row pt-4 pb-2 border'>
         <div className=' w-auto h-10 flex flex-row mr-8'>
 
         <img className="w-10 h-10 ml-4" src={Logo}/>
@@ -34,8 +40,10 @@ function NavBar() {
         
             <div direction="row" className='flex flex-row h-10 w-full justify-end  pr-8'>
 
-            <button className='ml-2 font-bold' onClick={()=>handleHome()}>Home</button>
-            <button className='ml-8 font-bold'onClick={()=>handleExercise()}>Exercises</button>
+            <button className='ml-2 font-bold hover:underline' onClick={()=>handleHome()}>Home</button>
+            <button className='ml-8 font-bold hover:underline'onClick={()=>handleExercise()}>Exercises</button>
+            <button className='ml-8 font-bold hover:underline 'onClick={()=>handleLogin()}>Login</button>
+
             {/* <button className='ml-8 font-bold'>Exercises</button> */}
 
 
